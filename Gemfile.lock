@@ -55,6 +55,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0.4)
+    system-getifaddrs (0.2.0)
     websocket (1.0.7)
     websocket-driver (0.3.2)
     xpath (2.0.0)
@@ -72,3 +73,4 @@ DEPENDENCIES
   poltergeist
   rspec
   selenium-webdriver
+  system-getifaddrs (~> 0.2.0)

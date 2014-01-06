@@ -1,0 +1,6 @@
+files/
+spec/reports/
+spec/screenshots/
+
+.rspec_parallel
+.rspec
