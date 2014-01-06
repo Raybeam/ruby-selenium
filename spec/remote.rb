@@ -38,10 +38,10 @@ RSpec.configure do |config|
   # this allows each test to use the proper port when using
   # Capybara's "random available port"
   config.before(:each) do
-    if $webserver_port == nil && Capybara.current_session.server.nil?
+    if $remote_webserver_port == nil && Capybara.current_session.server.nil?
       puts "Could not find port settings, please set $webserver_port in config.php"
     end
-    next if $webserver_port == nil && Capybara.current_session.server.nil?
+    next if $remote_webserver_port == nil && Capybara.current_session.server.nil?
     set_app_address()
   end
 

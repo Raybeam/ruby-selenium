@@ -18,17 +18,17 @@ describe "Static pages" do
     #   should have_selector('h1',    text: 'Sample App')
     # end
 
-    # it "should have default title", :js => true do
-    #   page.should have_title('Ruby on Rails')
-    # end
+    it "should have default title", :js => true do
+      page.should have_title('Ruby on Rails')
+    end
 
     it "should have default title", :js => true do
       page.should have_title('fail')
     end
 
-    # it "should have default title", :js => true do
-    #   # page.should have_content('This is the home page for the')
-    #   page.html.should have_selector("title", :text => "Ruby on Rails Tutorial Sample App", :visible => false)
-    # end
+    it "should have default title", :js => true do
+      # page.should have_content('This is the home page for the')
+      page.html.should have_selector("title", :text => "Ruby on Rails Tutorial Sample App", :visible => false)
+    end
   end
 end

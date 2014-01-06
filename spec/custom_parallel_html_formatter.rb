@@ -1,11 +1,11 @@
 require_relative 'parallel_html_formatter'
 require 'erb'
 require_relative 'support/utilities'
-
-
+require_relative 'html_report'
 
 class CustomParallelHtmlFormatter < ParallelHtmlFormatter
   include ERB::Util
+  include HTMLReport
 
   def initialize(output)
     super
