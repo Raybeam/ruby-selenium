@@ -5,7 +5,7 @@ $grid_host = "10.242.1.187"
 $grid_port = "4444"
 
 # remote_webserver_ip
-# $remote_webserver_ip = "127.0.0.1"
+$remote_webserver_ip = "10.242.1.167"
 $remote_webserver_port = 3000
 
 # local_webserver_ip
